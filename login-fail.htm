@@ -1,52 +1,66 @@
 <!doctype html>
 <html>
+
+<head>
 <meta charset="utf-8">
 <title>Login Page</title>
 <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="style/loganstyle.css" rel="stylesheet" type="text/css">
+<link href="node_modules/bootstrap/dist/js/bootstrap.js" rel="" type="text/javascript">
+
+<script>
+    function myFunction() {
+        // var a = document.getElementById('a').value;
+        // var b = document.getElementById('b').value;
+        // alert("Error");
+        document.getElementById("demo").innerHTML = "Paragraph changed.";
+        // if(user == "1" && pass == "2")
+        // {
+        //     Window.open(url?:'https://www.youtube.com/')
+        // }
+        // else
+        // {
+        //     alert("Error.")
+        // }
+    }
+</script>
 
 </head>
+
 <body>
 
-    <div class="container">
-        <div class="col-lg-4"></div>
-        <div class="col-lg-4">
-            <div class="jumbotron" style="margin-top:150px">
 
-                <h3>Please Login </h3>
-                <br>
-                
-                <form>
-                <div class="form-group">
 
-                <input type="email" class="form-control" placeholder="Enter Username">
-                </div>
+    <div>
+        <div class="container-center" style="text-align:Left">
+            <div class="col-lg-4">
+                <div class="jumbotron">
+                    <h3 id="demo">Login </h3>
+                    <br>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Username" id="a" value="">
+                        </div>
 
-                <div class="form-group">
-
-                <input type="password" class="form-control" placeholder="Password">   
-                </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password" id="b" value="">   
+                        </div>
             
-                <div class="checkbox">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox">
+                                Remember me
+                            </label>
+                        </div>
 
-                <label>
-                <input type="checkbox">
-                Remember me
-                </label>
+                        <button onclick="myFunction()" type="submit" class="btn btn-primary form-control">Login</button>
+                    </form>
                 </div>
-
-                <button type="submit" class="btn btn-primary form-control">Login</button>
-
-                </form>
-
-
+            </div>
         </div>
     </div>
-    <div class="col-lg-4"></div>
-
-</div>
-</head>
-<body>
-
-
 </body>
 </html>
+<document class="">
+    
+</document>
