@@ -10,19 +10,18 @@
 
 <script>
     function myFunction() {
-        // var a = document.getElementById('a').value;
-        // var b = document.getElementById('b').value;
+         var user = document.getElementById('userField').value;
+         var pass = document.getElementById('passField').value;
         // alert("Error");
-        document.getElementById("demo").innerHTML = "Paragraph changed.";
-        // if(user == "1" && pass == "2")
-        // {
-        //     Window.open(url?:'https://www.youtube.com/')
-        // }
+        // document.getElementById("demo").innerHTML = "Paragraph changed.";
+         if(user == "1" && pass == "2")
+         {
+             Window.open("https://www.youtube.com/");
+         }
         // else
         // {
         //     alert("Error.")
         // }
-        return;
     }
 </script>
 
@@ -36,15 +35,15 @@
         <div class="container-center" style="text-align:Left; margin-top:150px">
             <div class="col-lg-4">
                 <div class="jumbotron">
-                    <h3 id="demo">Login </h3>
+                    <h3>Login </h3>
                     <br>
                     <form>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Username" id="a" value="">
+                            <input type="text" class="form-control" placeholder="Username" id="userField" value="">
                         </div>
 
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Password" id="b" value="">   
+                            <input type="password" class="form-control" placeholder="Password" id="passField" value="">   
                         </div>
             
                         <div class="checkbox">
