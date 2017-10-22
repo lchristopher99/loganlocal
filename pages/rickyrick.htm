@@ -59,6 +59,7 @@ div.tab button.active {
   <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
   <button class="tablinks" onclick="openCity(event, 'Datboi')">Datboi</button>
   <button class="tablinks" onclick="openCity(event, 'Snake')">Snake</button>
+  <button class="tablinks" onclick="link()">Default</button>
 </div>
 
 <div id="Home" class="tabcontent">
@@ -100,6 +101,12 @@ function openCity(evt, cityName) {
 document.getElementById("defaultOpen").click();
 </script>
      
+<script>
+function link() {
+    window.open ("../default.htm","_self")
+}
+</script>
+
 </body>
 </html> 
 
