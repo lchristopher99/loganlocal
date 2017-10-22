@@ -2,59 +2,56 @@
 <html>
 
 <head>
-<meta charset="utf-8">
-<title>Login Page</title>
-<link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
-<link href="../style/loganstyle.css" rel="stylesheet" type="text/css">
-<link href="../node_modules/bootstrap/dist/js/bootstrap.js" rel="" type="text/javascript">
 
-<script>
-    function myFunction() {
-         var user = document.getElementById('userField').value;
-         var pass = document.getElementById('passField').value;
-        // alert("Error");
-        // document.getElementById("demo").innerHTML = "Paragraph changed.";
-         if(user == "1" && pass == "2")
-         {
-             Window.open("https://www.youtube.com/");
-         }
-        // else
-        // {
-        //     alert("Error.")
-        // }
-    }
-</script>
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../style/loganstyle.css" rel="stylesheet" type="text/css">
+    <link href="../node_modules/bootstrap/dist/js/bootstrap.js" rel="" type="text/javascript">
 
 </head>
 
-<body>
-    <div>
-        <div class="container-center" style="text-align:Left; margin-top:150px">
-            <div class="col-lg-4">
-                <div class="jumbotron">
-                    <h3>Login </h3>
-                    <br>
-                    <form>
-                        <div id="userField" class="form-group">
-                            <input type="text" class="form-control" placeholder="Username" value="">
-                        </div>
-
-                        <div id="passField" class="form-group">
-                            <input type="password" class="form-control" placeholder="Password" value="">   
-                        </div>
-            
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox">
-                                Remember me
-                            </label>
-                        </div>
-
-                        <button onclick="myFunction()">Login</button>
-                    </form>
-                </div>
-            </div>
+<body>        
+    <div class="container-center" style="margin-top:150px">
+        <div class="col-lg-4">
+        <div class="jumbotron">
+        <h3>Login </h3>
+        <br>
+<form>
+        
+        <div id="userField" class="form-group">
+        <input type="text" class="form-control" placeholder="Username" name="userid" value="">
         </div>
-    </div>
+
+        <div id="passField" class="form-group">
+        <input type="password" class="form-control" placeholder="Password" name="pswrd" value="">   
+        </div>
+            
+        <div class="checkbox">
+        <input type="checkbox">
+        <label>
+        Remember me
+        </label>
+        </div>
+
+        <button type="button" class="btn-primary" onclick="check(this.form)" value="Login">Login</button>
+        </div>
+        </div>
+        </div>
+</form>
+
+<script language="javascript">
+function check(form) 
+{
+ if(form.userid.value == "abc" && form.pswrd.value == "123")
+  {
+    window.open("http://loganlocal.com/pages/secure.htm", "_self");
+  }
+    else
+  {
+    alert("Error.")
+  }
+}
+</script>
 </body>
 </html>

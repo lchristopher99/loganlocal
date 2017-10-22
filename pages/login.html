@@ -21,8 +21,8 @@
 		<br>
 		<form name="login">
 		<div class="login">
-				<input type="text" placeholder="Username" name="userid"><br>
-				<input type="password" placeholder="Password" name="pswrd"><br>
+				<input type="text" placeholder="Username" name="userid" value=""><br>
+				<input type="password" placeholder="Password" name="pswrd" value=""><br>
 				<input type="button" onclick="check(this.form)" value="Login"/>
 		</div>
 
@@ -35,10 +35,10 @@ function check(form)
 {
  if(form.userid.value == "abc" && form.pswrd.value == "123")
   {
-    window.open("http://loganlocal.com/pages/secure.htm","_self")
+    window.open("http://loganlocal.com/pages/login.htm","_self")
   }
  else
- {
+  {
    alert("Incorrect.")
   }
 }
