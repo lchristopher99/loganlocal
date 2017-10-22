@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
 .w3-bar-right, .w3-bar-item-right {
     padding:8px 16px;
@@ -12,17 +12,17 @@
     border: none;
     outline:none;
     display:block;
-  }
+}
 
 .button-gray {
     background-color: white;
     color: black;
     border: none;
-  }
+}
 
 .button-gray:hover {
     background-color: #cfcfcf;
-  }
+}
 
 .button-transition {
     background-color: rgb(121, 121, 121); 
@@ -36,4 +36,10 @@
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-  }
+}
+
+.login input[type=button]{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
